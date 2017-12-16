@@ -1,6 +1,6 @@
 package com.company;
 
-public interface iSort {
+public interface ISort {
     public void bubbleSort(int[] array);
 
     public void insertionSort(int[] array);

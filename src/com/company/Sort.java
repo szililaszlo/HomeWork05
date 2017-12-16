@@ -1,6 +1,6 @@
 package com.company;
 
-public class Sort implements iSort {
+public class Sort implements ISort {
 
     //buborék rendezés
     public void bubbleSort(int[] array) {
