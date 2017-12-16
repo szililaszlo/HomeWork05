@@ -16,9 +16,15 @@ public class MatrixOperation implements IMatrixOperation {
     //3
     //mátrix inicializálás
 
-    ///kitöltve valamivel hogy lefusson az előző 2-es feladat
     public int[][] initMatrixWithRandomNumbers(int n, int m, int min, int max) {
-        int a[][] = new int[][]{{1}, {2}};
-        return a;
+        //új 2d-s tömb deklarálása n*m-es méretbe
+        int [][] matrix = new int[n][m];
+        //for cilus segítségével feltöltöm a mátrixot
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j]= (int) (Math.random()* (max-min+1)+min);
+            }
+        }
+        return matrix;
     }
 }

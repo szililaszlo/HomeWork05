@@ -3,6 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        //1
         //teszt array
         int[] array = {6, 3, 7, 9, 55, 1, 5};
         //pédányosítás
@@ -12,12 +13,17 @@ public class Main {
         //kiíratás
         printArray(array);
 
+        //2
         //teszt mátrix
         int matrix[][]={{50,60,55,67,70},{72,66,77,80,69}};
         //pédányosítás
         MatrixOperation matrixOperation = new MatrixOperation();
         //mátrix kiíratás
         matrixOperation.printMatrix(matrix);
+
+        //3
+        //a véletlen számokkal inicializált mátrix kiíratása
+        matrixOperation.printMatrix( matrixOperation.initMatrixWithRandomNumbers(9,5,2,9));
 
     }
 
