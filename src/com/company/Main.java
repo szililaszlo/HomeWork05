@@ -12,6 +12,13 @@ public class Main {
         //kiíratás
         printArray(array);
 
+        //teszt mátrix
+        int matrix[][]={{50,60,55,67,70},{72,66,77,80,69}};
+        //pédányosítás
+        MatrixOperation matrixOperation = new MatrixOperation();
+        //mátrix kiíratás
+        matrixOperation.printMatrix(matrix);
+
     }
 
     //tömb kiírató metódus
